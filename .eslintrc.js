@@ -29,31 +29,31 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
 
     // Import order rules
-    "import/order": [
-      "error",
+    'import/order': [
+      'error',
       {
         groups: [
-          ["builtin", "external"],
-          ["internal", "sibling", "parent"],
-          "index",
+          ['builtin', 'external'],
+          ['internal', 'sibling', 'parent'],
+          'index',
         ],
 
         pathGroups: [
           {
-            pattern: "react",
-            group: "external",
-            position: "before",
+            pattern: 'react',
+            group: 'external',
+            position: 'before',
           },
         ],
 
-        pathGroupsExcludedImportTypes: ["builtin", "external"],
+        pathGroupsExcludedImportTypes: ['builtin', 'external'],
 
         alphabetize: {
-          order: "asc",
+          order: 'asc',
           caseInsensitive: true,
         },
 
-        "newlines-between": "always",
+        'newlines-between': 'always',
       },
     ],
 
@@ -113,6 +113,5 @@ module.exports = {
     //     format: ['camelCase'],
     //   },
     // ],
-    
   },
 };
